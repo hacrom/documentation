@@ -32,7 +32,7 @@ To work with MkDocs after installing it, you can use these commands
 
 To upload the documentation to the git repository please following command, but be aware that changes might be immediately visible.
 
-* `mkdocs deploy` - Uploads build documentation sites to gh-pages branch
+* `mkdocs gh-deploy` - Uploads build documentation sites to gh-pages branch
 
 ## Project layout
 
