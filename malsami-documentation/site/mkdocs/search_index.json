@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "MaLSAMi project documentation\n\n\nWelcome to the MaLSAMi project documentation.\n\n\nIn here we will document our progress and mainly all subprojects or programs\nwe will create or write.\nIf you want to take a deeper look in our open source code projects please refer to https://github.com/malsami\n\n\nAbout the project\n\n\nPrerequisite\n\n\nDocumentation structure\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "/#malsami-project-documentation",
+            "text": "Welcome to the MaLSAMi project documentation.  In here we will document our progress and mainly all subprojects or programs\nwe will create or write.\nIf you want to take a deeper look in our open source code projects please refer to https://github.com/malsami",
+            "title": "MaLSAMi project documentation"
+        },
+        {
+            "location": "/#about-the-project",
+            "text": "",
+            "title": "About the project"
+        },
+        {
+            "location": "/#prerequisite",
+            "text": "",
+            "title": "Prerequisite"
+        },
+        {
+            "location": "/#documentation-structure",
+            "text": "",
+            "title": "Documentation structure"
+        },
+        {
+            "location": "/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        }
+    ]
+}
