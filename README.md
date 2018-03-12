@@ -9,7 +9,7 @@ If you want to take a deeper look in our open source code projects please refer 
 
 ## About the project
 
-You can find a general description of the project MaLSAMi in the [About Section](/about)
+You can find a general description of the project MaLSAMi in the [About Section](https://malsami.github.io/documentation/about/)
 
 ## Prerequisite
 
