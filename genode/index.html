@@ -84,7 +84,7 @@
                 
                     <li><a class="toctree-l4" href="#commands">Commands</a></li>
                 
-                    <li><a class="toctree-l4" href="#structure-of-directories">Structure of directories</a></li>
+                    <li><a class="toctree-l4" href="#kernel-revisions">Kernel revisions</a></li>
                 
             
             </ul>
@@ -129,8 +129,10 @@
 <h2 id="agenda">Agenda</h2>
 <p>Starting with the Genode version 16.08 and Fiasco.OC revision 67m (<em>m</em> stands for 
 modified by the chair), the Genode version was updated first. After that the Fiasco.OC has been updated step by step.
-Eventually the Fiasco.OC should be replaced by seL4.</p>
-<p><img alt="version_progress" src="../version_progress.png" /></p>
+Eventually the Fiasco.OC will be replaced by seL4.</p>
+<p><img alt="version_progress" src="../version_progress.png" />
+[1] taken from <a href="https://github.com/ssumpf/foc">here</a><br />
+[2] taken from <a href="https://svn.l4re.org/repos/oc/l4re/trunk/">here</a></p>
 <h2 id="setup">Setup</h2>
 <p>To set up your system, please follow the steps on the <a href="https://argos-research.github.io/documentation/install.html">ArgOS-research website</a>.<br />
 The newest versions of Genode and Fiasco.OC are available from this <a href="https://github.com/FringsA/">github repository</a>.
@@ -147,15 +149,14 @@ There is also an <a href="https://github.com/FringsA/foc/issues/1">issue</a> des
 <code>operating-system$ make -C build/genode-foc_pbxa9/ run/hello</code></p>
 <p>create build directory<br />
 <code>operating-system$ make jenkins_build_dir</code></p>
-<h2 id="structure-of-directories">Structure of directories</h2>
-<p>There are several directories in the path <code>operating-system/genode/contrib/foc-02548d06466a0c48d445decb8c42eced48181dfa/src/kernel</code>:  </p>
+<h2 id="kernel-revisions">Kernel revisions</h2>
+<p>There are several revisions of the kernel. They are stored in the different branches of <a href="https://github.com/FringsA/foc_revisions">this repository</a>. Here is a short description for each branch:  </p>
 <ul>
-<li><code>foc</code> r76 working directory. The <em>make</em> process uses this directory for the compilation of the kernel.   </li>
+<li><code>master</code> r76 working directory. The <em>make</em> process uses this directory for the compilation of the kernel. Clone the <code>foc</code> directory be into <code>operating-system/genode/contrib/&lt;current_contribution&gt;/src/kernel/</code>.<br />
+At the moment the latest contribution is <code>foc-02548d06466a0c48d445decb8c42eced48181dfa</code>.  </li>
 <li><code>foc_r72</code> original r72 version.  </li>
-<li><code>foc_r72_andreas</code> working version of r72. Rename this folder to <em>foc</em> in order to run a working kernel. Rename the current <em>foc</em> direcctory before renaming the <em>foc_r72_andreas</em> directory.  </li>
-<li><code>foc_r72_sumpf</code> modified version of r72, taken from <a href="https://github.com/ssumpf/foc">here</a>.  </li>
+<li><code>foc_r72_andreas</code> working version of r72. Rename this folder to <em>foc</em> in order to run a working kernel.  </li>
 <li><code>foc_r76_backup_modified</code> version with the applied diffs from r72 vanilla version and the r72 sumpf version, but without any further changes to make it compile.  </li>
-<li><code>foc_r76_backup_unmodified</code> original version of the r76, taken via svn from <a href="https://svn.l4re.org/repos/oc/l4re/trunk/">here</a>.</li>
 </ul>
               
             </div>
