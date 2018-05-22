@@ -18,12 +18,11 @@ This section covers the updates for Genode and Fiasco.OC.
 		alt="Genode Focnados 18.02"
 		src="https://img.shields.io/badge/Genode%20Focnados%2018.02-done-brightgreen.svg?style=flat-square"></a>
 
-<a href="https://github.com/malsami/genode/tree/focnados_18.02_r78"><img
+<a href="https://github.com/argos-research/genode-CheckpointRestore-SharedMemory.git"><img
 		alt="Genode Focnados 18.02 Checkpoint-Restore"
-		src="https://img.shields.io/badge/Genode%2018.02%20Focnados%20r78%20Checkpoint%20Restore-incomplete-orange.svg?style=flat-square"></a>
+		src="https://img.shields.io/badge/Genode%2018.02%20Focnados%20r78%20Checkpoint%20Restore-incomplete%20/%20work%20in%20progress-orange.svg?style=flat-square"></a>
 
-<a href="https://github.com/malsami/genode/tree/focnados_18.02_r78"><img
-		alt="Genode Focnados 18.02 Checkpoint-Restore"
+<img alt="Genode Focnados 18.02 seL4"
 		src="https://img.shields.io/badge/Genode%2018.02%20seL4-future%20work-red.svg?style=flat-square"></a>
 
 
@@ -49,3 +48,6 @@ Genode 18.02 and focnados r78:<br />
 https://github.com/malsami/genode<br />
 branch focnados_18.02_r78
 
+Checkpoint Restore for Genode 18.02 and focnados r78:<br />
+https://github.com/argos-research/genode-CheckpointRestore-SharedMemory<br />
+branch fixing_restore-AR-18.02
