@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>About - MaLSAMi Documentation</title>
+  <title>Monitor - MaLSAMi Documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
+    var mkdocs_page_name = "Monitor";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -78,15 +78,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">About</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#goal-of-the-project">Goal of the project</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
         
     </li>
 <li>
@@ -113,8 +106,23 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../monitor/">Monitor</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Monitor</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#monitor">Monitor</a></li>
+                
+                    <li><a class="toctree-l4" href="#9595taskset95event9595taskset-event">__taskset_event__(taskset, event)</a></li>
+                
+                    <li><a class="toctree-l4" href="#9595taskset95start9595taskset">__taskset_start__(taskset)</a></li>
+                
+                    <li><a class="toctree-l4" href="#9595taskset95stop9595taskset">__taskset_stop__(taskset)</a></li>
+                
+                    <li><a class="toctree-l4" href="#9595taskset_finish9595self-taskset">__taskset_finish__(self, taskset)</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -155,7 +163,7 @@
     
       
     
-    <li>About</li>
+    <li>Monitor</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -165,8 +173,17 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="goal-of-the-project">Goal of the project</h3>
-<p>This project is about schedulability analysis. </p>
+                <h1 id="monitor">Monitor</h1>
+<p>This section is supposed to provide insight on the monitor component and how it is intended to be used. The monitor has to be provided alongside the taskset component to the <em>add_jobs()</em> function of the distributor. The monitors functions are called in <em>run()</em> of the <em>machine.py</em>.</p>
+<p>A monitor has to implement the <em>AbstractMonitor</em> in the distributor_service module which defines the following abstract methods:</p>
+<h4 id="9595taskset95event9595taskset-event"><em>__taskset_event__(taskset, event)</em></h4>
+<p>This function is called when the <em>session.run()</em> as soon as new information about the taskset is returned from Genode.</p>
+<h4 id="9595taskset95start9595taskset"><em>__taskset_start__(taskset)</em></h4>
+<p>This function is called when a new taskset has benn started by calling the <em>session.start()</em> function.</p>
+<h4 id="9595taskset95stop9595taskset"><em>__taskset_stop__(taskset)</em></h4>
+<p>This function is called when a new taskset has benn started by calling the <em>session.stop()</em> function. If this function is called the monitor regards the taskset as completed and all information, which could be gained is available. </p>
+<h4 id="9595taskset_finish9595self-taskset"><em>__taskset_finish__(self, taskset)</em></h4>
+<p>In general the monitor functions always hold a reference to the taskset the function was called with, so it has access to all information saved in the obect defined by the <a href="https://github.com/malsami/taskgen/blob/master/task.py"><strong>task.py</strong></a>.</p>
               
             </div>
           </div>
@@ -174,10 +191,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../distributor/" class="btn btn-neutral float-right" title="Distributor"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../reqAnalysis/" class="btn btn-neutral float-right" title="reqAnalysis"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Shallow_Learning/" class="btn btn-neutral" title="Shallow Learning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../machine_learning/" class="btn btn-neutral" title="Machine learning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -203,10 +220,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Shallow_Learning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../machine_learning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../distributor/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../reqAnalysis/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

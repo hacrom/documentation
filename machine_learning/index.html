@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>About - MaLSAMi Documentation</title>
+  <title>Machine learning - MaLSAMi Documentation</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
+    var mkdocs_page_name = "Machine learning";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -78,15 +78,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">About</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#goal-of-the-project">Goal of the project</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About</a>
         
     </li>
 <li>
@@ -106,8 +99,15 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../machine_learning/">Machine learning</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Machine learning</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#machine-learning">Machine Learning</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -155,7 +155,7 @@
     
       
     
-    <li>About</li>
+    <li>Machine learning</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -165,8 +165,11 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="goal-of-the-project">Goal of the project</h3>
-<p>This project is about schedulability analysis. </p>
+                <h3 id="machine-learning">Machine Learning</h3>
+<p>Machine Learning is a useful tool for <em><a href="https://en.wikipedia.org/wiki/Machine_learning">pattern matching</a></em> and curve fitting to make predictions based on data itself. Given the recent breakthroughs and ease of use, it is worthwhile to try to analyze our problem in the lens of machine learning and analyze how our analysis changes. Since we are using real-time systems, we must also analyze the efficiency and cost of the algorithms and understand the tradeoffs among different techniques. Certain algorithms may be more suitable for the offline training phase while others on the online training phase. All of these are factors that will be considered when analyzing the models. </p>
+<p>The models will be evaluated loosely on their time of execution but more on their classification ability. As with all machine learning tasks, the goal is for high precision and high recall. This ensures that our models can not only correctly classify data to its appropriate labels, but that it is able to do so without overfitting. </p>
+<p>We are pursuing both routes with <em><a href="../Deep_Learning/">Deep Learning</a></em> and <em><a href="../Shallow_Learning/">Shallow_Learning</a></em> to compare the approaches. Although deep learning models are more flexible and advanced than its shallow learning counterparts, it is important to analyze both to see the strenghts of both approaches. Since resources and time of execution are a factor in the online phase, it is important to see whether a heavyweight network is worth the cost. Furthermore, this analysis will provide insight into the underlying patterns and general structure of the data. This will pave the way for further research to be done in both schedulability and data analysis. </p>
+<p>However, to get a more complete analysis, it is important to investigate as many viable choices as we can get. Furthermore, different data-mining </p>
               
             </div>
           </div>
@@ -174,10 +177,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../distributor/" class="btn btn-neutral float-right" title="Distributor"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../monitor/" class="btn btn-neutral float-right" title="Monitor"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Shallow_Learning/" class="btn btn-neutral" title="Shallow Learning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../genode/" class="btn btn-neutral" title="Genode"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -203,10 +206,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Shallow_Learning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../genode/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../distributor/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../monitor/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

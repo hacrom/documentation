@@ -4,7 +4,31 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2018-04-04</lastmod>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/Deep_Learning/</loc>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/Feed_Forward_Net/</loc>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/Shallow_Learning/</loc>
+     <lastmod>2018-06-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +36,7 @@
     
     <url>
      <loc>None/about/</loc>
-     <lastmod>2018-04-04</lastmod>
+     <lastmod>2018-06-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +44,7 @@
     
     <url>
      <loc>None/distributor/</loc>
-     <lastmod>2018-04-04</lastmod>
+     <lastmod>2018-06-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,7 +52,39 @@
     
     <url>
      <loc>None/genode/</loc>
-     <lastmod>2018-04-04</lastmod>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/machine_learning/</loc>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/monitor/</loc>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/reqAnalysis/</loc>
+     <lastmod>2018-06-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/schedulabilityAnalysis/</loc>
+     <lastmod>2018-06-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
