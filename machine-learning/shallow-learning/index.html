@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Shallow learning - MaLSAMi Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Shallow learning";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MaLSAMi Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Analysis</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../analysis/requirements-analysis/">Requirements Analysis</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../analysis/schedulability-analysis/">Schedulability Analysis</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Machine Learning</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../machine-learning/">Machine Learning</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Shallow learning</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#shallow-learning">Shallow Learning</a></li>
+                
+                    <li><a class="toctree-l4" href="#logistic-regressionclassification">Logistic Regression/Classification</a></li>
+                
+                    <li><a class="toctree-l4" href="#naive-bayes-algorithm">Naive Bayes Algorithm</a></li>
+                
+                    <li><a class="toctree-l4" href="#support-vector-machines">Support Vector Machines</a></li>
+                
+                    <li><a class="toctree-l4" href="#k-nearest-neighbors">K-Nearest Neighbors</a></li>
+                
+                    <li><a class="toctree-l4" href="#random-forestsdecision-trees">Random Forests/Decision Trees</a></li>
+                
+                    <li><a class="toctree-l4" href="#suppor-vector-machines-svm">Suppor Vector Machines (svm)</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deep-learning/">Deep Learning</a>
+        
+    </li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Networks</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../nets/ffn/">Feed Forward Network</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../genode/genode/">Genode</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/">About</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MaLSAMi Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Machine Learning &raquo;</li>
+        
+      
+    
+    <li>Shallow learning</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="shallow-learning">Shallow Learning<a class="headerlink" href="#shallow-learning" title="Permanent link">&para;</a></h1>
+<p>Shallow Learning represents the techniques that are not &lsquo;deep learning&rsquo; or in the case of this project, those of which do not utilize a neural network or multi-layer perceptron. Although virtually any technique can be tested under the guise of &lsquo;shallow learning&rsquo;, we chose to focus on Support Vector Machines, k-Nearest Neibhbors (kNN), Logistic Regression, Gaussian Naive Bayes, and Decision Trees/Random Forests. While these algorithms each have their strenghts and weaknesses, their lightweight and easy implementation makes them easy to test and analyze. From the performance of these various algorithms, we can find import trends in the data. </p>
+<h3 id="logistic-regressionclassification">Logistic Regression/Classification<a class="headerlink" href="#logistic-regressionclassification" title="Permanent link">&para;</a></h3>
+<p>Logistic Regression will determine attempt to model any relationship between the measured data and the label data. In the case of taskset data, logistic regression will attemp to model a relationship between the various tasksets. </p>
+<p>If you are familiar with neural networks, logistic regression is simply a neural network without the hidden layer. It will give weights to the data point(s) based on the features.  </p>
+<h3 id="naive-bayes-algorithm">Naive Bayes Algorithm<a class="headerlink" href="#naive-bayes-algorithm" title="Permanent link">&para;</a></h3>
+<p>Naive Bayes algorithm is &lsquo;naive&rsquo; because it implicity assumes independence among all individual training examples. As we know with data systems, let alone taskset data, it is very unlikely that the data is independent. However, if we were to get a good performance with this classificaton algorithm, it would inidcate that the data is uncorrelated. </p>
+<p>Although more sophisticated algorithms exist, naive bayes is very good for efficient computation. Because of its assumption of independence, the order of the input or the arrangement of the data does not affect the overall training experience. This is especially important in online-learning when all the data is not immediately available to us. </p>
+<h3 id="support-vector-machines">Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permanent link">&para;</a></h3>
+<p>We fitted a support vector machine with a polynomial kernel. For completeness, we added functionality for grid search (GridSearchCV) which fits the support vector machine with multiple different hyperparameters. (Note about the grid search, it is an exhaustive execution that will take a lot of time and energy. We recommend enabling GPU support, however it is unclear whether or not performance will ampify as much as it would for deep learning. Do not be surprised by long computation time. A quicker alternative would be to manually tune the hyperparameters with a training and validation set). </p>
+<p>In general, the Support Vector Machines with the Gaussian kernels perform optimally. </p>
+<h3 id="k-nearest-neighbors">K-Nearest Neighbors<a class="headerlink" href="#k-nearest-neighbors" title="Permanent link">&para;</a></h3>
+<p>The K-Nearest Neighbors is one of the simples algorithm that uses rudimentary techniques to classify data. It is a flexible approach and can be useful for determining locality information. This information could further be used for unsupervised learning techniques such as clustering and dimension reduction. Unfortunately, this method does not scale well with multi-feature data similiar to the data that we currently have. However, this algorithm is fairly simple to implement and test. It will serve as a meaningful control algorithm (one in which we compare our fancier algorithms to). </p>
+<h3 id="random-forestsdecision-trees">Random Forests/Decision Trees<a class="headerlink" href="#random-forestsdecision-trees" title="Permanent link">&para;</a></h3>
+<p>Decision Trees are great for handling categorical information without having to do much preprocessing. After the training phase, it is able to classify data quickly. This will be especially useful in the online learning phase. The main issue with decision trees is its likelihood of overfitting. This is where random forests come in to the picture.  </p>
+<p>Random Forests are a very powerful algorithm and handle the low variance issues of decision trees. Although they are a little more difficult to implement/tune, they are expected to be one of the more useful algorithms. Much like decision trees, they can classify test data very quickly.   </p>
+<h3 id="suppor-vector-machines-svm">Suppor Vector Machines (svm)<a class="headerlink" href="#suppor-vector-machines-svm" title="Permanent link">&para;</a></h3>
+<p>Suppor Vector machines are effective classifiers for any kind of classification task. A linear support vector machine  may not separate the data as well as a non-linear svm. However, for completeness, we will train several different models on the data to obtain the best fit. Although this is an exhaustive process, support vector machines are relatively lightweight and very highly regarded for binary classification tasks. Additionally, the preproccesing step to divide the classes into respective classification assignments is also important and will assist in more accuracte predictions. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../deep-learning/" class="btn btn-neutral float-right" title="Deep Learning"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../machine-learning/" class="btn btn-neutral" title="Machine Learning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../machine-learning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../deep-learning/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
