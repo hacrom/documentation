@@ -11,7 +11,7 @@ Another possible use-case for checkpoints, which is not being looked into is the
 
 The decision of where a task is migrated to is generally based on the information about the task. It could also be a posibillity to include the information gained through the checkpoints to find the best solution.
 
-We have chosen to employ [machine learning](machine_learning.md) to improve our ability to make these decisions. There are three general phases in which learning would be best applied: 
+We have chosen to employ [machine learning](/machine-learning/machine-learning) to improve our ability to make these decisions. There are three general phases in which learning would be best applied: 
 
 
 * **Offline Learning** Heavyweight phase where there is a lot of data available and enough resources to extensively train the model. We can train on previously sampled data and can utilize our resources for complicated algorithms. This will be done on a different ECU or computer to analyze as much data  as possible and to perform migration planning.

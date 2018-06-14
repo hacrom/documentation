@@ -9,7 +9,7 @@ There are virtually endless number of deep learning models that are possible to 
 
 A Feed-forward artificial neural network is a multilayer perceptron and is the most basic neural network available. A feed forward network is a necessary model and will act as the *control* network for the rest of the deep learning models. Feed Forward Networks are adaptable in fitting simple data. We hope to acheive as high of a possible of an accuracy on this type of network before venturing into the more advanced networks listed below. A simple Feed Forward Net has already been trained and fitted with some success (80% accuracy.)
 
-An implementation for a basic Feed Forward Network already exists. The repo and expansive documentation is provided *[here](Feed_Forward_Net.md)*. 
+An implementation for a basic Feed Forward Network already exists. The repo and expansive documentation is provided *[here](nets/ffn)*. 
 
 ### *[Recurrent Neural Networks](https://en.wikipedia.org/wiki/Recurrent_neural_network)* 
 

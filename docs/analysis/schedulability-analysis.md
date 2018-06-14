@@ -24,6 +24,6 @@ Furthremore, heavy computation and time used to fit a static datasets very likel
 
 Analogously, the online training is beneficial and detrimental for the opposite reasons. While online, we do not have as much time and resources as we do while offline. Especially in the situation that we are in now, we must process the data quickly. Therefore, we used the online training as more of a 'validation' stage in which we fine tune the models and hyperparameters. 
 
-The distributor is the module responsible for data generation that we will be used for the schedulability analysis. See the *[distributor file](distributor.md)* for more information about the distributor. 
+The distributor is the module responsible for data generation that we will be used for the schedulability analysis. See the *[distributor file](/data-generation/distributor)* for more information about the distributor. 
 
-To further analyze the methods we are using, view *[Machine Learning](machine_learning.md)* and the *[requirement analysis](reqAnalysis.md)*
+To further analyze the methods we are using, view *[Machine Learning](/machine-learning/machine-learning)* and the *[requirement analysis](/analysis/requirements-analysis)*
