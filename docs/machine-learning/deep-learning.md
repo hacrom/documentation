@@ -20,8 +20,7 @@ Recurrent Neural Networks are types of networks which utilizes 'memory'. These n
 
 A GAN generally does not describe the structure of the neural network, but rather two types of neural networks which work together (or against each other). One generates data similar to some real dataset and the second network, which was formerly trained on the original dataset evaluates the generated data. The generator intends on "fooling" the evaluating network into classifying the generated data as real. While training, the generator becomes better at creating data close to the real dataset and the evaluating network becomes better at flagging faulty or erroneous data. 
 
-Typically the generator is a deconvolutional network, often generating images, while the second network is a convolutional network, evaluating the image.
-
+We can think of the generator as producing the data and the discriminator as a regular supervised network that is no different from the others. The discriminator however can classify real and fake data more accurately. The generator produces samples to 'misclassify' the discriminator while the discriminator is training to counteract it.  
 
 #### *[Convolutional Neural Networks](https://en.wikipedia.org/wiki/Convolutional_neural_network)*
 
