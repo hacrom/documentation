@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,14 +12,14 @@
     
         
     <url>
-     <loc>None/analysis/requirements-analysis/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/analysis/requirements-analysis/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/analysis/schedulability-analysis/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/analysis/schedulability-analysis/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -28,25 +28,25 @@
     
         
     <url>
-     <loc>None/machine-learning/machine-learning/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/machine-learning/machine-learning/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/machine-learning/shallow-learning/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/machine-learning/shallow-learning/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/machine-learning/deep-learning/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/machine-learning/deep-learning/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None</loc>
+     <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -55,16 +55,16 @@
 
     
     <url>
-     <loc>None/genode/genode/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/genode/genode/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/about/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <loc>/about/</loc>
+     <lastmod>2018-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

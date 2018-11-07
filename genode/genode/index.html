@@ -3,31 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Genode - MaLSAMi Documentation</title>
   
-
   <link rel="shortcut icon" href="../../img/favicon.ico">
-
-  
+  <title>Genode - MaLSAMi Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../css/highlight.css">
-
   
   <script>
     // Current page data
     var mkdocs_page_name = "Genode";
+    var mkdocs_page_input_path = "genode/genode.md";
+    var mkdocs_page_url = "/genode/genode/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
   <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -47,107 +44,83 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Analysis</span>
     <ul class="subnav">
-    <li><span>Analysis</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../analysis/requirements-analysis/">Requirements Analysis</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../analysis/schedulability-analysis/">Schedulability Analysis</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../analysis/requirements-analysis/">Requirements Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../analysis/schedulability-analysis/">Schedulability Analysis</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Machine Learning</span>
     <ul class="subnav">
-    <li><span>Machine Learning</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../machine-learning/machine-learning/">Machine Learning</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../machine-learning/shallow-learning/">Shallow learning</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../machine-learning/deep-learning/">Deep Learning</a>
-        
-    </li>
-
-        
-            
+                <li class="">
+                    
+    <a class="" href="../../machine-learning/machine-learning/">Machine Learning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../machine-learning/shallow-learning/">Shallow learning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../machine-learning/deep-learning/">Deep Learning</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Networks</span>
     <ul class="subnav">
-    <li><span>Networks</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../machine-learning/nets/ffn/">Feed Forward Network</a>
-        
-    </li>
-
-        
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../machine-learning/nets/ffn/">Feed Forward Network</a>
+                </li>
     </ul>
-
-        
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Genode</a>
-        
-            <ul>
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Genode</a>
+    <ul class="subnav">
             
-                <li class="toctree-l3"><a href="#genode-fiasco-update">Genode & Fiasco Update</a></li>
-                
-                    <li><a class="toctree-l4" href="#agenda">Agenda</a></li>
-                
-                    <li><a class="toctree-l4" href="#setup">Setup</a></li>
-                
-                    <li><a class="toctree-l4" href="#structure-of-directories">Structure of directories</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l2"><a href="#genode-fiasco-update">Genode &amp; Fiasco Update</a></li>
+    
+        <ul>
         
-    </li>
-<li>
+            <li><a class="toctree-l3" href="#agenda">Agenda</a></li>
+        
+            <li><a class="toctree-l3" href="#setup">Setup</a></li>
+        
+            <li><a class="toctree-l3" href="#structure-of-directories">Structure of directories</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../about/">About</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
           
         </ul>
       </div>
@@ -186,22 +159,25 @@
 <h2 id="agenda">Agenda<a class="headerlink" href="#agenda" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/malsami/foc/tree/r78"><img
         alt="foc r78"
-        src="https://img.shields.io/badge/foc%20r78-done-brightgreen.svg?style=flat-square"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
+        src="https://img.shields.io/badge/foc%20r78-done-brightgreen.svg?style=flat-square"></img></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+
 <a href="https://github.com/malsami/genode/tree/18.02_r78"><img
         alt="Genode 18.02"
-        src="https://img.shields.io/badge/Genode%2018.02-done-brightgreen.svg?style=flat-square"></a>
+        src="https://img.shields.io/badge/Genode%2018.02-done-brightgreen.svg?style=flat-square"></img></a>
 <br>
 <a href="https://github.com/malsami/foc/tree/focnados_r78"><img
         alt="focnados r78"
-        src="https://img.shields.io/badge/focnados%20r78-done-brightgreen.svg?style=flat-square"></a> +
+        src="https://img.shields.io/badge/focnados%20r78-done-brightgreen.svg?style=flat-square"></img></a> +
 <a href="https://github.com/malsami/genode/tree/focnados_18.02_r78"><img
         alt="Genode Focnados 18.02"
-        src="https://img.shields.io/badge/Genode%20Focnados%2018.02-done-brightgreen.svg?style=flat-square"></a></p>
-<p><a href="https://github.com/argos-research/genode-CheckpointRestore-SharedMemory.git"><img
+        src="https://img.shields.io/badge/Genode%20Focnados%2018.02-done-brightgreen.svg?style=flat-square"></img></a>
+<br>
+<img alt="Genode Focnados 18.02 Taskloader"
+        src="https://img.shields.io/badge/Genode%20Focnados%2018.02%20Taskloader-done-brightgreen.svg?style=flat-square"></img></p>
+<p><a href="https://github.com/argos-research/genode-CheckpointRestore-SharedMemory/tree/fixing_restore-AR-18.02"><img
         alt="Genode Focnados 18.02 Checkpoint-Restore"
-        src="https://img.shields.io/badge/Genode%2018.02%20Focnados%20r78%20Checkpoint%20Restore-incomplete%20/%20work%20in%20progress-orange.svg?style=flat-square"></a></p>
+        src="https://img.shields.io/badge/Genode%2018.02%20Focnados%20r78%20Checkpoint%20Restore-incomplete%20/%20work%20in%20progress-orange.svg?style=flat-square"></img></a></p>
 <p><img alt="Genode Focnados 18.02 seL4"
-        src="https://img.shields.io/badge/Genode%2018.02%20seL4-future%20work-red.svg?style=flat-square"></a></p>
+        src="https://img.shields.io/badge/Genode%2018.02%20seL4-future%20work-red.svg?style=flat-square"></img></p>
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <p>The default setup listed below is based on Genode 16.08 and foc r67.<br />
 To use the new versions Genode 18.02 and foc r78 please take a look at &ldquo;Structure of directories&rdquo;.</p>
@@ -219,9 +195,9 @@ branch 18.02_r78</p>
 <p>Genode 18.02 and focnados r78:<br />
 https://github.com/malsami/genode<br />
 branch focnados_18.02_r78</p>
-<p>Checkpoint Restore for Genode 18.02 and focnados r78:<br />
-https://github.com/argos-research/genode-CheckpointRestore-SharedMemory<br />
-branch fixing_restore-AR-18.02</p>
+<p>Checkpoint Restore and Taskloader for Genode 18.02 and focnados r78:<br />
+https://github.com:argos-research/operating-system.git<br />
+branch 18.02</p>
               
             </div>
           </div>
@@ -229,7 +205,7 @@ branch fixing_restore-AR-18.02</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../about/" class="btn btn-neutral float-right" title="About"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../machine-learning/nets/ffn/" class="btn btn-neutral" title="Feed Forward Network"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -246,7 +222,7 @@ branch fixing_restore-AR-18.02</p>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
@@ -254,7 +230,7 @@ branch fixing_restore-AR-18.02</p>
 
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -265,6 +241,10 @@ branch fixing_restore-AR-18.02</p>
       
     </span>
 </div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
 
 </body>
 </html>

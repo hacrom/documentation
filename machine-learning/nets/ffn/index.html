@@ -3,31 +3,28 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Feed Forward Network - MaLSAMi Documentation</title>
   
-
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-
-  
+  <title>Feed Forward Network - MaLSAMi Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../../../css/highlight.css">
-
   
   <script>
     // Current page data
     var mkdocs_page_name = "Feed Forward Network";
+    var mkdocs_page_input_path = "machine-learning/nets/ffn.md";
+    var mkdocs_page_url = "/machine-learning/nets/ffn/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
   <script src="../../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../../js/highlight.pack.js"></script>
-  <script src="../../../js/theme.js"></script> 
-
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -47,101 +44,73 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
+	  
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../..">Home</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Analysis</span>
     <ul class="subnav">
-    <li><span>Analysis</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../../analysis/requirements-analysis/">Requirements Analysis</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../../analysis/schedulability-analysis/">Schedulability Analysis</a>
-        
-    </li>
-
-        
+                <li class="">
+                    
+    <a class="" href="../../../analysis/requirements-analysis/">Requirements Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../analysis/schedulability-analysis/">Schedulability Analysis</a>
+                </li>
     </ul>
-<li>
+	    </li>
           
-            <li>
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Machine Learning</span>
     <ul class="subnav">
-    <li><span>Machine Learning</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../machine-learning/">Machine Learning</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../shallow-learning/">Shallow learning</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../deep-learning/">Deep Learning</a>
-        
-    </li>
-
-        
-            
+                <li class="">
+                    
+    <a class="" href="../../machine-learning/">Machine Learning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../shallow-learning/">Shallow learning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../deep-learning/">Deep Learning</a>
+                </li>
+                <li class=" current">
+                    
+    <span class="caption-text">Networks</span>
     <ul class="subnav">
-    <li><span>Networks</span></li>
+                <li class="toctree-l3 current">
+                    
+    <a class="current" href="./">Feed Forward Network</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#feed-forward-network-documentation">Feed Forward Network Documentation</a></li>
+    
 
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Feed Forward Network</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#feed-forward-network-documentation">Feed Forward Network Documentation</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
     </ul>
-
-        
+                </li>
     </ul>
-<li>
+                </li>
+    </ul>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../../genode/genode/">Genode</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../genode/genode/">Genode</a>
+	    </li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../../about/">About</a>
-        
-    </li>
-<li>
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../about/">About</a>
+	    </li>
           
         </ul>
       </div>
@@ -165,6 +134,10 @@
     
       
         
+          <li>Machine Learning &raquo;</li>
+        
+      
+        
           <li>Networks &raquo;</li>
         
       
@@ -184,6 +157,17 @@
 <p>The input dimension (N X D) constituted the number of tasksets (N) where each taskset contained a certain number of tasks. The parameters of these individual tasks within the taskset made up the parameters/features of the taskset itself. </p>
 <p>The output dimension (H2 X 1) was a single neuron which outputs a &lsquo;1&rsquo; or &lsquo;0&rsquo; using a sigmoid function. The code is available <a href="https://github.com/RobertHa/Bachelor-Thesis">here</a>. </p>
 <p>The user can determine how many hidden units he or she would like to use. He or she is also allowed to decide on the number of epochs and the learning rate. This gives the user a bit of flexibility in fitting the model to the task data. </p>
+<p>Although ReLU functions are very popular with most Feed-Forward Neural Networks. ReLU functions are popular because of their handling of the vanishing gradient that often arises from other activation functions. The advantage of Leaky ReLU is that it preserves more of the data than a regular ReLU function. While the ReLU chooses the max(0,input), the leaky-ReLU will choose:</p>
+<p>$
+\begin{array}{cc}
+  { &amp; 
+    \begin{array}{cc}
+      0 &amp; x\leq 0 \
+      \frac{100-x}{100} &amp; 0\leq x\leq 100 \
+      0 &amp; 100\leq x
+    \end{array}
+\end{array}
+$</p>
               
             </div>
           </div>
@@ -191,7 +175,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../genode/genode/" class="btn btn-neutral float-right" title="Genode"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../genode/genode/" class="btn btn-neutral float-right" title="Genode">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../deep-learning/" class="btn btn-neutral" title="Deep Learning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -208,7 +192,7 @@
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
@@ -216,7 +200,7 @@
 
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -227,6 +211,10 @@
       
     </span>
 </div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/require.js"></script>
+      <script src="../../../search/search.js"></script>
 
 </body>
 </html>
