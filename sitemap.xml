@@ -1,72 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/analysis/requirements-analysis/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/analysis/schedulability-analysis/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/machine-learning/machine-learning/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/machine-learning/shallow-learning/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/machine-learning/deep-learning/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
     <url>
-     <loc>/genode/genode/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
-     <loc>/about/</loc>
-     <lastmod>2018-11-07</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
 </urlset>
