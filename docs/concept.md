@@ -10,20 +10,32 @@ These tasks are first generated within tasksets and then distributed to either K
 ## basic concept of a task
 <!-- TODO -->
 
-### task parameters and strucutre
+### task parameters and structure
 <!-- TODO -->
 
 ## basic concept of a taskset
 <!-- TODO -->
 
-
 ## taskset parameters and structure
 <!-- TODO -->
-
 
 ## distribution
 <!-- TODO -->
 
 ## evaluation
+<!-- TODO -->
+
+
+## deployment scenarios
+
+### KVM/QEMU
+<!-- TODO -->
+
+
+### virtualized ARM-server
+<!-- TODO -->
+
+
+### real hardware
 <!-- TODO -->
 
