@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>About - MaLSAMi Documentation</title>
+  <title>Concept - MaLSAMi Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
-    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_name = "Concept";
+    var mkdocs_page_input_path = "concept.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -115,9 +115,29 @@
     </ul>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <a class="" href="../concept/">Concept</a>
+    <a class="current" href="./">Concept</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#malsami-project-concept">MaLSAMi project concept</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#basic-concept-of-a-task">basic concept of a task</a></li>
+        
+            <li><a class="toctree-l3" href="#basic-concept-of-a-taskset">basic concept of a taskset</a></li>
+        
+            <li><a class="toctree-l3" href="#taskset-parameters-and-structure">taskset parameters and structure</a></li>
+        
+            <li><a class="toctree-l3" href="#distribution">distribution</a></li>
+        
+            <li><a class="toctree-l3" href="#evaluation">evaluation</a></li>
+        
+        </ul>
+    
+
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -125,15 +145,9 @@
     <a class="" href="../testbed/">Testbed</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">About</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#goal-of-the-project">Goal of the project</a></li>
-    
-
-    </ul>
+    <a class="" href="../about/">About</a>
 	    </li>
           
         </ul>
@@ -158,7 +172,7 @@
     
       
     
-    <li>About</li>
+    <li>Concept</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -168,8 +182,27 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="goal-of-the-project">Goal of the project<a class="headerlink" href="#goal-of-the-project" title="Permanent link">&para;</a></h3>
-<p>This project is about schedulability analysis. </p>
+                <h1 id="malsami-project-concept">MaLSAMi project concept<a class="headerlink" href="#malsami-project-concept" title="Permanent link">&para;</a></h1>
+<p>As the MaLSAMi project wants to train machine learning algorithms for schedulability analysis, it needs task data to do so.</p>
+<p>This task data is (in the scope of the project) artifical, which means it is generated from artifical tasks that execute arbitrary operations.</p>
+<p>These tasks are first generated within tasksets and then distributed to either KVM/QEMU driven virtual machines, to real hardware or to ARM Servers where the system is virtualized.</p>
+<h2 id="basic-concept-of-a-task">basic concept of a task<a class="headerlink" href="#basic-concept-of-a-task" title="Permanent link">&para;</a></h2>
+<!-- TODO -->
+
+<h3 id="task-parameters-and-strucutre">task parameters and strucutre<a class="headerlink" href="#task-parameters-and-strucutre" title="Permanent link">&para;</a></h3>
+<!-- TODO -->
+
+<h2 id="basic-concept-of-a-taskset">basic concept of a taskset<a class="headerlink" href="#basic-concept-of-a-taskset" title="Permanent link">&para;</a></h2>
+<!-- TODO -->
+
+<h2 id="taskset-parameters-and-structure">taskset parameters and structure<a class="headerlink" href="#taskset-parameters-and-structure" title="Permanent link">&para;</a></h2>
+<!-- TODO -->
+
+<h2 id="distribution">distribution<a class="headerlink" href="#distribution" title="Permanent link">&para;</a></h2>
+<!-- TODO -->
+
+<h2 id="evaluation">evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<!-- TODO -->
               
             </div>
           </div>
@@ -177,8 +210,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../testbed/" class="btn btn-neutral float-right" title="Testbed">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../testbed/" class="btn btn-neutral" title="Testbed"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../data-generation/monitor/" class="btn btn-neutral" title="Monitor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -204,8 +239,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../testbed/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../data-generation/monitor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../testbed/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
