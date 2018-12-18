@@ -81,41 +81,64 @@
                     
     <a class="" href="../schedulability-analysis/">Schedulability Analysis</a>
                 </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
+                <li class="">
+                    
     <span class="caption-text">Machine Learning</span>
     <ul class="subnav">
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../machine-learning/machine-learning/">Machine Learning</a>
                 </li>
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../machine-learning/shallow-learning/">Shallow learning</a>
                 </li>
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../machine-learning/deep-learning/">Deep Learning</a>
                 </li>
-                <li class="">
+                <li class="toctree-l3">
                     
     <span class="caption-text">Networks</span>
     <ul class="subnav">
-                <li class="toctree-l3">
+                <li class="toctree-l4">
                     
     <a class="" href="../../machine-learning/nets/ffn/">Feed Forward Network</a>
                 </li>
     </ul>
                 </li>
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../genode/genode/">Genode</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../genode/genode/">Genode</a>
+    <span class="caption-text">Data Generation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../data-generation/distributor/">Distributor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../data-generation/monitor/">Monitor</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../concept.md">Concept</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../testbed.md">Testbed</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -165,7 +188,7 @@
 <p>The migration of a task by restoring a checkpoint to another ECU could happen either directly to another ECU or by collecting all the checkpoints of all the ECUs to a different machine and redistributing them to a chosen target ECU when necessary. Another variant of checkpointing would be to create an initial full checkpoint followed by smaller change-based incremental checkpoints. These incremental checkpoints might be integrated into the full checkpoint on the same ECU before sending it to another machine, or every checkpoint is sent right after creation. These smaller based checkpoints are motivated by the necessity of storing and retaining information in the event of an imminent failure. Furthermore, the data would prove to be useful for later analysis. </p>
 <p>Another possible use-case for checkpoints, which is not being looked into is the restart of failed tasks at its last known state on the same machine.</p>
 <p>The decision of where a task is migrated to is generally based on the information about the task. It could also be a posibillity to include the information gained through the checkpoints to find the best solution.</p>
-<p>We have chosen to employ <a href="machine_learning.md">machine learning</a> to improve our ability to make these decisions. There are three general phases in which learning would be best applied: </p>
+<p>We have chosen to employ <a href="/machine-learning/machine-learning">machine learning</a> to improve our ability to make these decisions. There are three general phases in which learning would be best applied: </p>
 <ul>
 <li><strong>Offline Learning</strong> Heavyweight phase where there is a lot of data available and enough resources to extensively train the model. We can train on previously sampled data and can utilize our resources for complicated algorithms. This will be done on a different ECU or computer to analyze as much data  as possible and to perform migration planning.</li>
 <li><strong>Online Learning</strong> This type of online learning will be performed on very strong ECUs. Although these ECUs are strong, we do not have access to the entire dataset and all the resources as we are in the offline learning. Furthermore, we will be learning on data in real-time and will not be able to analyze both ends of the dataset. However, this aspect is necessary as it will simulate the migration planning in real time. These decisions will most likely have a greateer influence on the migration planning. </li>

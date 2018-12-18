@@ -65,35 +65,32 @@
                     
     <a class="" href="../../../analysis/schedulability-analysis/">Schedulability Analysis</a>
                 </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
+                <li class=" current">
+                    
     <span class="caption-text">Machine Learning</span>
     <ul class="subnav">
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../machine-learning/">Machine Learning</a>
                 </li>
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../shallow-learning/">Shallow learning</a>
                 </li>
-                <li class="">
+                <li class="toctree-l3">
                     
     <a class="" href="../../deep-learning/">Deep Learning</a>
                 </li>
-                <li class=" current">
+                <li class="toctree-l3 current">
                     
     <span class="caption-text">Networks</span>
     <ul class="subnav">
-                <li class="toctree-l3 current">
+                <li class="toctree-l4 current">
                     
     <a class="current" href="./">Feed Forward Network</a>
     <ul class="subnav">
             
-    <li class="toctree-l4"><a href="#feed-forward-network-documentation">Feed Forward Network Documentation</a></li>
+    <li class="toctree-l5"><a href="#feed-forward-network-documentation">Feed Forward Network Documentation</a></li>
     
 
     </ul>
@@ -101,11 +98,37 @@
     </ul>
                 </li>
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../genode/genode/">Genode</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../../../genode/genode/">Genode</a>
+    <span class="caption-text">Data Generation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../../data-generation/distributor/">Distributor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../data-generation/monitor/">Monitor</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../concept.md">Concept</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../testbed.md">Testbed</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -142,6 +165,10 @@
           <li>Machine Learning &raquo;</li>
         
       
+        
+          <li>Analysis &raquo;</li>
+        
+      
     
     <li>Feed Forward Network</li>
     <li class="wy-breadcrumbs-aside">
@@ -154,7 +181,7 @@
             <div class="section">
               
                 <h3 id="feed-forward-network-documentation">Feed Forward Network Documentation<a class="headerlink" href="#feed-forward-network-documentation" title="Permanent link">&para;</a></h3>
-<p>This was a five layers feed forward neural network with two hidden layers of arbitrary length. The hidden layers each had leaky-RELU non-linearities. </p>
+<p>This was a four layers feed forward neural network with two hidden layers of arbitrary length. The hidden layers each had leaky-RELU non-linearities. </p>
 <p>The input dimension (N X D) constituted the number of tasksets (N) where each taskset contained a certain number of tasks. The parameters of these individual tasks within the taskset made up the parameters/features of the taskset itself. </p>
 <p>The output dimension (H2 X 1) was a single neuron which outputs a &lsquo;1&rsquo; or &lsquo;0&rsquo; using a sigmoid function. The code is available <a href="https://github.com/RobertHa/Bachelor-Thesis">here</a>. </p>
 <p>The user can determine how many hidden units he or she would like to use. He or she is also allowed to decide on the number of epochs and the learning rate. This gives the user a bit of flexibility in fitting the model to the task data. </p>
