@@ -9,7 +9,7 @@ There are virtually endless number of deep learning models that are possible to 
 
 A Feed-forward artificial neural network is a multilayer perceptron and is the most basic neural network available. A feed forward network is a necessary model and will act as the *control* network for the rest of the deep learning models. Feed Forward Networks are adaptable in fitting simple data. We hope to acheive as high of a possible of an accuracy on this type of network before venturing into the more advanced networks listed below. A simple Feed Forward Net has already been trained and fitted with some success (80% accuracy.)
 
-An implementation for a basic Feed Forward Network already exists. The repo and expansive documentation is provided *[here](nets/ffn)*. 
+An implementation for a basic Feed Forward Network already exists. The repo and expansive documentation is provided *[here](Feed_Forward_Net.md)*. 
 
 ### *[Recurrent Neural Networks](https://en.wikipedia.org/wiki/Recurrent_neural_network)* 
 
@@ -20,7 +20,8 @@ Recurrent Neural Networks are types of networks which utilizes 'memory'. These n
 
 A GAN generally does not describe the structure of the neural network, but rather two types of neural networks which work together (or against each other). One generates data similar to some real dataset and the second network, which was formerly trained on the original dataset evaluates the generated data. The generator intends on "fooling" the evaluating network into classifying the generated data as real. While training, the generator becomes better at creating data close to the real dataset and the evaluating network becomes better at flagging faulty or erroneous data. 
 
-We can think of the generator as producing the data and the discriminator as a regular supervised network that is no different from the others. The discriminator however can classify real and fake data more accurately. The generator produces samples to 'misclassify' the discriminator while the discriminator is training to counteract it.  
+Typically the generator is a deconvolutional network, often generating images, while the second network is a convolutional network, evaluating the image.
+
 
 #### *[Convolutional Neural Networks](https://en.wikipedia.org/wiki/Convolutional_neural_network)*
 
