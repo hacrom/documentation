@@ -21,4 +21,7 @@ pages:
         - Networks :
             - 'Feed Forward Network': 'machine-learning/nets/ffn.md'
     - Genode : 'genode/genode.md'
+    - Data Generation : 
+        - 'Distributor' : 'data-generation/distributor.md'
+        - 'Monitor' : 'data-generation/monitor.md'
     - About : 'about.md'
