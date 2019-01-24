@@ -1,4 +1,4 @@
-site_name: MaLSAMi Documentation 
+site_name: HaCRoM Documentation 
 theme: readthedocs
 plugins:
     - search
@@ -11,20 +11,3 @@ markdown_extensions:
 
 pages:
     - Home : 'index.md'
-    - Analysis :
-        - 'Requirements Analysis' : 'analysis/requirements-analysis.md'
-        - 'Schedulability Analysis' : 'analysis/schedulability-analysis.md'
-        - 'Machine Learning' :
-                - 'Machine Learning' : 'machine-learning/machine-learning.md'
-                - 'Shallow learning': 'machine-learning/shallow-learning.md'
-                - 'Deep Learning': 'machine-learning/deep-learning.md'
-                - Networks :
-                        - 'Feed Forward Network': 'machine-learning/nets/ffn.md'
-        - Genode : 'genode/genode.md'
-    - Data Generation : 
-        - 'Distributor' : 'data-generation/distributor.md'
-        - 'Monitor' : 'data-generation/monitor.md'
-    - Concept: 'concept.md'
-    - Testbed: 'testbed.md'
-
-    - About : 'about.md'
