@@ -16,10 +16,10 @@ You can find a general description of the project MaLSAMi in the [About Section]
 To contribute to this documentation please download the source code from the [MaLSAMi Documentation Repository]()
 and follow the instructions at [MkDocs](http://www.mkdocs.org/#installation).
 
-## Documentation structure
+<!--- Documentation structure --->
 
-The documentation is structured into different subpages which are representing subprojects of the project MaLSAMi.
-Nevertheless also analysis results or specifications of the projects can be described in a subpage.
+<!--The documentation is structured into different subpages which are representing subprojects of the project MaLSAMi.
+Nevertheless also analysis results or specifications of the projects can be described in a subpage.-->
 
 
 ## Commands
