@@ -1,11 +1,11 @@
-# MaLSAMi project documentation
+# HaCRoM project documentation
 
 
-Welcome to the MaLSAMi project documentation.
+Welcome to the HaCRoM project documentation.
 
 In here we will document our progress and almost all subprojects or programs
 we will create or write.
-If you want to take a deeper look in our open source code projects please refer to the [MaLSAMi Github Page](https://github.com/malsami)
+If you want to take a deeper look in our open source code projects please refer to the [HaCRoM Github Page](https://github.com/hacrom)
 
 ## About the project
 
